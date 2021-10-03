@@ -5,6 +5,13 @@
 
 # Changelog
 
+### [1.0.1](https://www.github.com/gikari/test-bismuth-ci/compare/v1.0.0...v1.0.1) (2021-10-03)
+
+
+### Bug Fixes
+
+* use id for RP ([d0bd0d8](https://www.github.com/gikari/test-bismuth-ci/commit/d0bd0d87576c161962c0af07945bdb057dd68512))
+
 ## 1.0.0 (2021-10-03)
 
 
