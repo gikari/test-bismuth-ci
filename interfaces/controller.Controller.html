@@ -90,7 +90,7 @@
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/controller.TilingController.html" class="tsd-signature-type" data-tsd-kind="Class">TilingController</a></li>
+					<li><a href="../classes/controller.ControllerImpl.html" class="tsd-signature-type" data-tsd-kind="Class">ControllerImpl</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -108,6 +108,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#drop" class="tsd-kind-icon">drop</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#manageWindow" class="tsd-kind-icon">manage<wbr>Window</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#onCurrentSurfaceChanged" class="tsd-kind-icon">on<wbr>Current<wbr>Surface<wbr>Changed</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#onSurfaceUpdate" class="tsd-kind-icon">on<wbr>Surface<wbr>Update</a></li>
@@ -123,6 +124,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#onWindowResize" class="tsd-kind-icon">on<wbr>Window<wbr>Resize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#onWindowResizeOver" class="tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Over</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#onWindowResizeStart" class="tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#onWindowShadeChanged" class="tsd-kind-icon">on<wbr>Window<wbr>Shade<wbr>Changed</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="controller.Controller.html#showNotification" class="tsd-kind-icon">show<wbr>Notification</a></li>
 							</ul>
 						</section>
@@ -137,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Surface<span class="tsd-signature-symbol">:</span> <a href="driver_surface.DriverSurface.html" class="tsd-signature-type" data-tsd-kind="Interface">DriverSurface</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L40">controller/index.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L39">controller/index.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,10 +151,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="currentWindow" class="tsd-anchor"></a>
 					<h3>current<wbr>Window</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Window<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></div>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Window<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L35">controller/index.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L34">controller/index.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">screens<span class="tsd-signature-symbol">:</span> <a href="driver_surface.DriverSurface.html" class="tsd-signature-type" data-tsd-kind="Interface">DriverSurface</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L31">controller/index.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L30">controller/index.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -180,16 +182,39 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="manageWindow" class="tsd-anchor"></a>
-					<h3>manage<wbr>Window</h3>
+					<a name="drop" class="tsd-anchor"></a>
+					<h3>drop</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">manage<wbr>Window<span class="tsd-signature-symbol">(</span>win<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">drop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L141">controller/index.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L152">controller/index.ts:152</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The function is called when the script is destroyed.
+									In particular, it&#39;s called by QML Component.onDestroyed</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="manageWindow" class="tsd-anchor"></a>
+					<h3>manage<wbr>Window</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">manage<wbr>Window<span class="tsd-signature-symbol">(</span>win<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L146">controller/index.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,7 +225,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>win: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>win: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which needs to be managed.</p>
 									</div>
@@ -220,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L51">controller/index.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L50">controller/index.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L57">controller/index.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L56">controller/index.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,13 +292,13 @@
 					<a name="onWindowAdded" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Added</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Added<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Added<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L91">controller/index.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L90">controller/index.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -284,7 +309,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>new added window</p>
 									</div>
@@ -298,19 +323,19 @@
 					<a name="onWindowChanged" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Changed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a>, comment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a>, comment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L107">controller/index.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L106">controller/index.ts:106</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> comment: <span class="tsd-signature-type">string</span></h5>
@@ -324,13 +349,13 @@
 					<a name="onWindowFocused" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Focused</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Focused<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Focused<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L135">controller/index.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L134">controller/index.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +366,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which received the focus</p>
 									</div>
@@ -355,13 +380,13 @@
 					<a name="onWindowGeometryChanged" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Geometry<wbr>Changed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Geometry<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Geometry<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L63">controller/index.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L62">controller/index.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +397,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window whose geometry has changed</p>
 									</div>
@@ -386,13 +411,13 @@
 					<a name="onWindowMaximizeChanged" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Maximize<wbr>Changed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Maximize<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a>, maximized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Maximize<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a>, maximized<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L104">controller/index.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L103">controller/index.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,7 +428,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window whose maximization state changed</p>
 									</div>
@@ -423,13 +448,13 @@
 					<a name="onWindowMove" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Move</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Move<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Move<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L113">controller/index.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L112">controller/index.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,7 +465,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window, which it being moved.</p>
 									</div>
@@ -454,13 +479,13 @@
 					<a name="onWindowMoveOver" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Move<wbr>Over</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Move<wbr>Over<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Move<wbr>Over<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L129">controller/index.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L128">controller/index.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -473,7 +498,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which was being dragged</p>
 									</div>
@@ -487,13 +512,13 @@
 					<a name="onWindowMoveStart" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Move<wbr>Start</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Move<wbr>Start<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Move<wbr>Start<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L121">controller/index.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L120">controller/index.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +531,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which is being dragged</p>
 									</div>
@@ -520,13 +545,13 @@
 					<a name="onWindowRemoved" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Removed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Removed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Removed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L97">controller/index.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L96">controller/index.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -537,7 +562,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which was removed</p>
 									</div>
@@ -551,13 +576,13 @@
 					<a name="onWindowResize" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Resize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Resize<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Resize<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L69">controller/index.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L68">controller/index.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -568,7 +593,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which is resized</p>
 									</div>
@@ -582,13 +607,13 @@
 					<a name="onWindowResizeOver" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Resize<wbr>Over</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Over<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Over<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L85">controller/index.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L84">controller/index.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -601,7 +626,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which was dropped</p>
 									</div>
@@ -615,13 +640,13 @@
 					<a name="onWindowResizeStart" class="tsd-anchor"></a>
 					<h3>on<wbr>Window<wbr>Resize<wbr>Start</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Start<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Start<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L77">controller/index.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L76">controller/index.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -634,9 +659,40 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>window: <a href="../classes/engine_window.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a></h5>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the window which is being resized</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="onWindowShadeChanged" class="tsd-anchor"></a>
+					<h3>on<wbr>Window<wbr>Shade<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>Shade<wbr>Changed<span class="tsd-signature-symbol">(</span>window<span class="tsd-signature-symbol">: </span><a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L140">controller/index.ts:140</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>React to the window shade state change</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>window: <a href="engine_window.EngineWindow.html" class="tsd-signature-type" data-tsd-kind="Interface">EngineWindow</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the window whose state was changed</p>
 									</div>
 								</li>
 							</ul>
@@ -654,7 +710,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/controller/index.ts#L46">controller/index.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/controller/index.ts#L45">controller/index.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -691,7 +747,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/controller.TilingController.html" class="tsd-kind-icon">Tiling<wbr>Controller</a>
+						<a href="../classes/controller.ControllerImpl.html" class="tsd-kind-icon">Controller<wbr>Impl</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -706,6 +762,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="controller.Controller.html#screens" class="tsd-kind-icon">screens</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="controller.Controller.html#drop" class="tsd-kind-icon">drop</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="controller.Controller.html#manageWindow" class="tsd-kind-icon">manage<wbr>Window</a>
@@ -751,6 +810,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="controller.Controller.html#onWindowResizeStart" class="tsd-kind-icon">on<wbr>Window<wbr>Resize<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="controller.Controller.html#onWindowShadeChanged" class="tsd-kind-icon">on<wbr>Window<wbr>Shade<wbr>Changed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="controller.Controller.html#showNotification" class="tsd-kind-icon">show<wbr>Notification</a>

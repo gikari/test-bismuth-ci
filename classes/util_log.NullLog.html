@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>util/kwinutil | bismuth</title>
+	<title>NullLog | bismuth</title>
 	<meta name="description" content="Documentation for bismuth">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,75 +55,99 @@
 					<a href="../modules.html">bismuth</a>
 				</li>
 				<li>
-					<a href="util_kwinutil.html">util/kwinutil</a>
+					<a href="../modules/util_log.html">util/log</a>
+				</li>
+				<li>
+					<a href="util_log.NullLog.html">NullLog</a>
 				</li>
 			</ul>
-			<h1>Module util/kwinutil</h1>
+			<h1>Class NullLog</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Null log, that does not output anything</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">NullLog</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/util_log.Log.html" class="tsd-signature-type" data-tsd-kind="Interface">Log</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util_kwinutil.html#toQRect" class="tsd-kind-icon">toQRect</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util_kwinutil.html#toRect" class="tsd-kind-icon">to<wbr>Rect</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="util_log.NullLog.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="util_log.NullLog.html#log" class="tsd-kind-icon">log</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="toQRect" class="tsd-anchor"></a>
-					<h3>toQRect</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">toQRect<span class="tsd-signature-symbol">(</span>rect<span class="tsd-signature-symbol">: </span><a href="../classes/util_rect.Rect.html" class="tsd-signature-type" data-tsd-kind="Class">Rect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/extern_qt.QRect.html" class="tsd-signature-type" data-tsd-kind="Interface">QRect</a></li>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Null<wbr>Log<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="util_log.NullLog.html" class="tsd-signature-type" data-tsd-kind="Class">NullLog</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/util/kwinutil.ts#L8">util/kwinutil.ts:8</a></li>
-								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>rect: <a href="../classes/util_rect.Rect.html" class="tsd-signature-type" data-tsd-kind="Class">Rect</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/extern_qt.QRect.html" class="tsd-signature-type" data-tsd-kind="Interface">QRect</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="util_log.NullLog.html" class="tsd-signature-type" data-tsd-kind="Class">NullLog</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="toRect" class="tsd-anchor"></a>
-					<h3>to<wbr>Rect</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Rect<span class="tsd-signature-symbol">(</span>qrect<span class="tsd-signature-symbol">: </span><a href="../interfaces/extern_qt.QRect.html" class="tsd-signature-type" data-tsd-kind="Interface">QRect</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/util_rect.Rect.html" class="tsd-signature-type" data-tsd-kind="Class">Rect</a></li>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="log" class="tsd-anchor"></a>
+					<h3>log</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>_str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LogType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/util_log.Log.html">Log</a>.<a href="../interfaces/util_log.Log.html#log">log</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/5df104c/src/util/kwinutil.ts#L12">util/kwinutil.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/gikari/test-bismuth-ci/blob/a4ede8d/src/kwinscript/util/log.ts#L84">util/log.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>qrect: <a href="../interfaces/extern_qt.QRect.html" class="tsd-signature-type" data-tsd-kind="Interface">QRect</a></h5>
+									<h5>_str: <span class="tsd-signature-type">LogType</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/util_rect.Rect.html" class="tsd-signature-type" data-tsd-kind="Class">Rect</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -136,17 +160,32 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="util_kwinutil.html">util/kwinutil</a>
+						<a href="../modules/util_log.html">util/log</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="util_kwinutil.html#toQRect" class="tsd-kind-icon">toQRect</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="util_log.LogImpl.html" class="tsd-kind-icon">Log<wbr>Impl</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="util_kwinutil.html#toRect" class="tsd-kind-icon">to<wbr>Rect</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="util_log.NullLog.html" class="tsd-kind-icon">Null<wbr>Log</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="util_log.NullLog.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="util_log.NullLog.html#log" class="tsd-kind-icon">log</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/util_log.Log.html" class="tsd-kind-icon">Log</a>
 					</li>
 				</ul>
 			</nav>
@@ -166,6 +205,8 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
