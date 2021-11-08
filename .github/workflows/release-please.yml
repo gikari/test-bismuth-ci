@@ -43,15 +43,19 @@ jobs:
         run: |
           npm install
           .github/scripts/sysdep-install.sh
-          npm run build
+          cmake -S "." -B "build" -G Ninja \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DCMAKE_INSTALL_PREFIX="$PWD/install-artifact"
+          cmake --build "build"
+          cmake --install "build"
 
       - name: Package 📦
         run: |
-          .github/scripts/tar-build.sh
+          tar czf install-artifact.tar.gz --directory=install-artifact .
 
       - name: Publish 🎉
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ needs.release-please.outputs.tag_name }}
           files: |
-            build-artifacts.tar.gz
+            install-artifact.tar.gz
